@@ -159,9 +159,6 @@ A blueprint ensuring cohesive development and clear contract between the backend
 - Log Retention: Logs will be retained for 90 days.
 - Log Immutability: Logs are append-only; no modification or deletion via API.
 - Log Access: All authenticated users (admins) can view logs.
-
-## Error Propagation to Frontend
-
 - The frontend is expected to display user-friendly error messages based on the `error` field in API responses.
 - Technical details from the `details` field should be logged for support/troubleshooting, not shown to end users unless required.
 - For recoverable errors (e.g., network timeouts), the frontend should provide retry options or clear guidance to the user.

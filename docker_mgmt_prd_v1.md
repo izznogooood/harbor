@@ -17,6 +17,12 @@ Develop a secure, maintainable, and scalable self-hosted application for managin
 - System administrators
 - Small/medium business IT teams
 
+## Service Configuration
+> A “service” may represent a single container or a group of containers (compose-like), but is always managed as a single unit in the dashboard. Single-container setups are defined as services with one container.
+
+- The database stores all service configuration normally found in a docker-compose.yml file, including: `services`, `image`, `container_name`, `environment`, `volumes`, `ports`, `restart`, and `depends_on`. This enables centralized management, editing, and redeployment of Docker services from the dashboard.
+- Each service definition supports these fields. The format is inspired by docker-compose, but all services are managed as first-class objects in the dashboard.
+
 ## High-Level Requirements
 
 ### Functional Requirements
@@ -29,6 +35,8 @@ Develop a secure, maintainable, and scalable self-hosted application for managin
 - Provide detailed logging of Docker operations and service health checks.
 - Allow users to fetch and view the last 100 lines of logs for any running or stopped service via the dashboard.
 - Users can create, edit, and delete services from the dashboard. Service definitions are stored in the database and can be managed entirely via the UI/API.
+
+
 
 #### User Interface
 - Simple, responsive dashboard displaying:
@@ -73,12 +81,6 @@ Develop a secure, maintainable, and scalable self-hosted application for managin
 
 #### Scalability
 - Stateless backend architecture to allow easy scaling.
-
-#### Service Configuration
-> A “service” may represent a single container or a group of containers (compose-like), but is always managed as a single unit in the dashboard. Single-container setups are defined as services with one container.
-
-- The database stores all service configuration normally found in a docker-compose.yml file, including: `services`, `image`, `container_name`, `environment`, `volumes`, `ports`, `restart`, and `depends_on`. This enables centralized management, editing, and redeployment of Docker services from the dashboard.
-- Each service definition supports these fields. The format is inspired by docker-compose, but all services are managed as first-class objects in the dashboard.
 
 ## Architecture & Technology Stack
 
