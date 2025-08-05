@@ -1,6 +1,6 @@
 # API and Interaction Design Document
 
-[View on Eraser![](https://app.eraser.io/workspace/ui0nQr4DqIPHvjl0Z5z0/preview?elements=iYNG785yG_M5jNzF7K8URQ&type=embed)](https://app.eraser.io/workspace/ui0nQr4DqIPHvjl0Z5z0?elements=iYNG785yG_M5jNzF7K8URQ)
+[View on Eraser![](https://app.eraser.io/workspace/iuALeqyxBvDXpWgcEhS6/preview?elements=Ez_7FutHI6DIaiP2xYiYMg&type=embed)](https://app.eraser.io/workspace/iuALeqyxBvDXpWgcEhS6?elements=Ez_7FutHI6DIaiP2xYiYMg)
 
 ## Overview
 This document describes the API interactions, authentication mechanisms, and the connectivity between frontend, backend, database (Supabase), and Docker daemon for the Self-Hosted Docker Management Dashboard (SDMD).
@@ -23,7 +23,7 @@ A blueprint ensuring cohesive development and clear contract between the backend
 - **Backend ↔ PostgreSQL**: Direct database interactions using SQLAlchemy ORM.
 - **Backend ↔ Supabase**: JWT authentication verification only.
 - **Backend ↔ Docker Daemon**: Direct Docker API calls through a local Unix socket, secured internally.
-- **Backend ↔ Celery**: Task queuing and scheduling via Redis/RabbitMQ (internally).
+- **Backend ↔ Celery**: Task queuing and scheduling via Redis.
 
 ## Authentication
 
