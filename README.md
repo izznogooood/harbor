@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[View on Eraser![](https://app.eraser.io/workspace/iuALeqyxBvDXpWgcEhS6/preview?elements=Ez_7FutHI6DIaiP2xYiYMg&type=embed)](https://app.eraser.io/workspace/iuALeqyxBvDXpWgcEhS6?elements=Ez_7FutHI6DIaiP2xYiYMg)
+
 ## 🌊 Overview
 
 Harbor is a **self-hosted, intuitive dashboard** designed to simplify the management of your Docker services. Forget the command line for routine tasks – Harbor provides a clean web interface to control your containers, pull images, view logs, and automate updates, all from your own infrastructure.
